@@ -19,11 +19,14 @@ import java.util.ArrayList;
 import java.util.Random;
 
 import domain.Wurfel;
+import domain.ZweiteWuerfel;
 
 public class Main {
     public static void main(String[] args) {
         ArrayList<String> wuerfel = new Wurfel().getWuerfel();
         int randomWurf = new Random().nextInt(1, 7);
         System.out.println(wuerfel.get(randomWurf));
+        randomWurf = new Random().nextInt(1,7);
+        System.out.println(new ZweiteWuerfel().getZweitewuerfel().get(randomWurf));
     }
 }
