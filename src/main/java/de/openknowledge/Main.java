@@ -36,5 +36,7 @@ public class Main {
         wurfel.forSchleife();
         ZweiteWuerfel zweiteWuerfel = new ZweiteWuerfel();
         zweiteWuerfel.schleifeForArray();
+
+        System.out.println("hallo from branch b2");
     }
 }
