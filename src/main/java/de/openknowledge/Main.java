@@ -32,9 +32,9 @@ public class Main {
         System.out.println("replacing hier");
         System.out.println("adding some more Changes");
         System.out.println("hallo form test branch");
-        for (int i = 0; i < 3; i++) {
-            System.out.println(i);
-        }
+        Wurfel wurfel = new Wurfel();
+        wurfel.forSchleife();
+
 
     }
 }

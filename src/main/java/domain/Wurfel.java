@@ -29,5 +29,10 @@ public class Wurfel {
     public ArrayList<String> getWuerfel() {
         return wuerfel;
     }
+    public void forSchleife(){
+        for (int i = 0; i < 3; i++) {
+            System.out.println(i);
+        }
+    }
 
 }
