@@ -29,5 +29,8 @@ public class Main {
         randomWurf = new Random().nextInt(1,7);
         System.out.println(new ZweiteWuerfel().getZweitewuerfel().get(randomWurf)) ;
         System.out.println("some Changes 1");
+        System.out.println("some Changes 2");
+        System.out.println("some Changes 3");
+        System.out.println("some Changes 4");
     }
 }
