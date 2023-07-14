@@ -34,5 +34,13 @@ public class Wurfel {
             System.out.println(i);
         }
     }
+    public void forSchleifeZwei(){
+        for (int i = 0; i < 5; i++) {
+            System.out.println(i);
+            if (i == 4){
+                System.out.println("this is from b1 branch");
+            }
+        }
+    }
 
 }

@@ -36,5 +36,8 @@ public class Main {
         wurfel.forSchleife();
         ZweiteWuerfel zweiteWuerfel = new ZweiteWuerfel();
         zweiteWuerfel.schleifeForArray();
+        wurfel.forSchleifeZwei();
+
+
     }
 }
