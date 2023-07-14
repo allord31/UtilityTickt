@@ -34,6 +34,12 @@ public class Main {
         System.out.println("hallo form test branch");
         Wurfel wurfel = new Wurfel();
         wurfel.forSchleife();
+        for (int i = 0; i < 5; i++) {
+            System.out.println(i);
+            if (i == 4){
+                System.out.println("this is from b1 branch");
+            }
+        }
 
 
     }
