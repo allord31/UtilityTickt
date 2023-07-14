@@ -38,5 +38,6 @@ public class Main {
         zweiteWuerfel.schleifeForArray();
 
         System.out.println("hallo from branch b2");
+        System.out.println("hallo from brach b2 commit m2");
     }
 }
