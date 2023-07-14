@@ -24,12 +24,13 @@ import domain.ZweiteWuerfel;
 public class Main {
     public static void main(String[] args) {
         ArrayList<String> wuerfel = new Wurfel().getWuerfel();
-        int randomWurf = new Random().nextInt(1, 7);
+        int randomWurf = new Random().nextInt(6);
         System.out.println(wuerfel.get(randomWurf));
-        randomWurf = new Random().nextInt(1,7);
+        randomWurf = new Random().nextInt(6);
         System.out.println(new ZweiteWuerfel().getZweitewuerfel().get(randomWurf)) ;
         System.out.println("some Changes 1");
         System.out.println("replacing hier");
         System.out.println("adding some more Changes");
+
     }
 }
