@@ -27,11 +27,14 @@ public class Main {
         int randomWurf = new Random().nextInt(6);
         System.out.println(wuerfel.get(randomWurf));
         randomWurf = new Random().nextInt(6);
-        System.out.println(new ZweiteWuerfel().getZweitewuerfel().get(randomWurf)) ;
+        System.out.println(new ZweiteWuerfel().getZweitewuerfel().get(randomWurf));
         System.out.println("some Changes 1");
         System.out.println("replacing hier");
         System.out.println("adding some more Changes");
         System.out.println("hallo form test branch");
+        for (int i = 0; i < 3; i++) {
+            System.out.println(i);
+        }
 
     }
 }
