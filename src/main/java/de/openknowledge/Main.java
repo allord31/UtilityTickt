@@ -34,7 +34,7 @@ public class Main {
         System.out.println("hallo form test branch");
         Wurfel wurfel = new Wurfel();
         wurfel.forSchleife();
-
-
+        ZweiteWuerfel zweiteWuerfel = new ZweiteWuerfel();
+        zweiteWuerfel.schleifeForArray();
     }
 }

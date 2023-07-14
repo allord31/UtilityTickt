@@ -29,4 +29,10 @@ public class ZweiteWuerfel {
     public ArrayList<String> getZweitewuerfel(){
         return zweitewuerfel;
     }
+    public void schleifeForArray(){
+        for (String s: zweitewuerfel){
+            System.out.print(s +", ");
+        }
+        System.out.println("\n");
+    }
 }
