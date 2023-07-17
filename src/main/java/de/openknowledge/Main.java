@@ -15,29 +15,20 @@
  */
 package de.openknowledge;
 
-import java.util.ArrayList;
-import java.util.Random;
-
-import domain.Wurfel;
-import domain.ZweiteWuerfel;
-
+import java.util.Properties;
 public class Main {
     public static void main(String[] args) {
-        ArrayList<String> wuerfel = new Wurfel().getWuerfel();
-        int randomWurf = new Random().nextInt(6);
-        System.out.println(wuerfel.get(randomWurf));
-        randomWurf = new Random().nextInt(6);
-        System.out.println(new ZweiteWuerfel().getZweitewuerfel().get(randomWurf));
-        System.out.println("some Changes 1");
-        System.out.println("replacing hier");
-        System.out.println("adding some more Changes");
-        System.out.println("hallo form test branch");
-        Wurfel wurfel = new Wurfel();
-        wurfel.forSchleife();
-        ZweiteWuerfel zweiteWuerfel = new ZweiteWuerfel();
-        zweiteWuerfel.schleifeForArray();
-        wurfel.forSchleifeZwei();
-        System.out.println("hallo from branch b2");
-        System.out.println("hallo from brach b2 commit m2");
+        System.out.println(System.getProperties());
+        System.out.println("System environment\n" + System.getenv());
+        System.out.println("System Name: " + System.getProperty("os.name")
+            + ", Java Version " + System.getProperty("java.version"));
+        String myParamValue = System.getProperty("my.param");
+        System.out.println("my.param value: " + myParamValue);
+        Properties properties = System.getProperties();
+        for (String key : properties.stringPropertyNames()){
+            System.out.println(key + ": " + System.getProperty(key));
+        }
+        System.exit(0);
+
     }
 }
