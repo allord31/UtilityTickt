@@ -18,17 +18,19 @@ package de.openknowledge;
 import java.util.Properties;
 public class Main {
     public static void main(String[] args) {
-        System.out.println(System.getProperties());
-        System.out.println("System environment\n" + System.getenv());
         System.out.println("System Name: " + System.getProperty("os.name")
             + ", Java Version " + System.getProperty("java.version"));
-        String myParamValue = System.getProperty("my.param");
-        System.out.println("my.param value: " + myParamValue);
+        String myParamValue = System.getProperty("java.version.date");
+        System.setProperty("my.param","1234");
+        System.out.println("Java Version Date value: " + myParamValue +"\n");
+        System.out.println(System.getProperties());
+        System.out.println("System environment\n" + System.getenv());
         Properties properties = System.getProperties();
         for (String key : properties.stringPropertyNames()){
             System.out.println(key + ": " + System.getProperty(key));
         }
-        System.exit(0);
 
+
+        System.exit(0);
     }
 }
